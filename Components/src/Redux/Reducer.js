@@ -12,21 +12,22 @@ const MovieReducer = (state = InitialState , action) => {
 
     case A_FETCH_MOVIE_DATA_START:
       return Object.assign({},state,{
-        isFetching : true
+        isFetching : action.isFetching
       })
 
     case A_FETCH_MOVIE_DATA_DONE:
       return Object.assign({},state,{
-        isFetching : false,
+        isFetching : action.isFetching,
         response : action.response
       })
 
     case A_FETCH_MOVIE_DATA_ERROR:
       return Object.assign({},state,{
-        isFetching : false,
+        isFetching : action.isFetching,
         error : action.error
       })
-
+    default:
+      return state
   }
 }
 
