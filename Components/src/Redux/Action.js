@@ -1,0 +1,9 @@
+export const A_FETCH_MOVIE_DATA_START = 'A_FETCH_MOVIE_DATA_START';
+export const A_FETCH_MOVIE_DATA_DONE = 'A_FETCH_MOVIE_DATA_START';
+export const A_FETCH_MOVIE_DATA_ERROR = 'A_FETCH_MOVIE_DATA_START';
+
+export const AC_FETCH_MOVIE_DATA_START = () =>{
+
+  return  
+
+}
